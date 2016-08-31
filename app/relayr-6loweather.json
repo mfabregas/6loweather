@@ -1,0 +1,106 @@
+{
+    "owner": "e3617179-4dc4-44c2-9802-f23454d3341d",
+    "id": "6a527902-5d2e-4c69-ad1f-37b735530ff4",
+    "name": "SixLoWeather",
+    "productNumber": "",
+    "description": "An open 6LoWPAN weather station",
+    "website": "http://zolertia.io",
+    "manufacturer": {
+        "name": "Zolertia SL",
+        "website": "http://zolertia.io",
+        "contactInfo": {
+            "email": "info@zolertia.io"
+        }
+    },
+    "resources": [],
+    "firmware": {
+        "1.0.0": {
+            "binaries": "",
+            "transport": {
+                "cloud": {
+                    "commands": [
+                        {
+                            "name": "interval",
+                            "path": "",
+                            "valueSchema": {
+                                "type": "number",
+                                "maximum": 3600,
+                                "minimum": 1
+                            }
+                        }
+                    ],
+                    "readings": [
+                        {
+                            "path": "",
+                            "meaning": "rain_mm",
+                            "valueSchema": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "atm_press",
+                            "valueSchema": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "wspeed_int",
+                            "valueSchema": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "wspeed_max",
+                            "valueSchema": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "wspeed_avg",
+                            "valueSchema": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "wdir_int",
+                            "valueSchema": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "humidity",
+                            "valueSchema": {
+                                "type": "number",
+                                "unit": "RH%",
+                                "maximum": 100,
+                                "minimum": 0
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "temperature",
+                            "valueSchema": {
+                                "type": "number",
+                                "unit": "Celsius",
+                                "maximum": 120,
+                                "minimum": -20
+                            }
+                        }
+                    ],
+                    "configurations": []
+                }
+            },
+            "repository": "",
+            "releaseDate": "",
+            "releaseNotes": "",
+            "documentation": ""
+        }
+    }
+}
+
