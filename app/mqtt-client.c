@@ -244,6 +244,18 @@ PROCESS_THREAD(mqtt_client_process, ev, data)
   printf("%s %s\n", APP_STRING, VERSION_STRING);
   printf("*--------------------------------------*\n");
 
+#if WITH_RELAYR_PLATFORM
+  printf("Relay MQTT broker, ");
+#else
+  printf("Mosquitto MQTT broker, ");
+#endif
+
+#if WITH_LLSEC_ENABLED
+  printf("LLSEC enabled\n");
+#else
+  printf("LLSEC disabled\n");
+#endif
+
   /* Bootstrap until we join the DODAG */
   PRINTF("Connecting to the wireless network ");
   while(1) {

@@ -65,7 +65,7 @@
 // #define NETSTACK_CONF_RDC                nullrdc_driver
 
 /* Security related configuration */
-#if WITH_LLSEC
+#if WITH_LLSEC_ENABLED
 #undef LLSEC802154_CONF_ENABLED
 #define LLSEC802154_CONF_ENABLED            1
 
