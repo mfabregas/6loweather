@@ -1,0 +1,29 @@
+Contiki-contiki-merge-20160622-28-g56f8407
+Zolertia RE-Mote platform
+Rime configured with address 00:12:4b:00:06:16:0f:d7
+ Net: sicslowpan
+ MAC: CSMA
+ RDC: ContikiMAC
+*--------------------------------------*
+Weather station MQTT client v.0.1
+*--------------------------------------*
+Mosquitto MQTT broker, LLSEC enabled
+Connecting to the wireless network ..................................................
+Client IPv6 addresses: aaaa::212:4b00:616:fd7
+fe80::212:4b00:616:fd7
+MQTT: Attempting to connect
+MQTT: Broker address ::ffff:25bb:6a10 (1883)
+MQTT: Disconnected, reattempting to connect again
+MQTT: Disconnected
+MQTT: Attempting to connect
+MQTT: Broker address ::ffff:25bb:6a10 (1883)
+MQTT: Connected to the Broker
+MQTT: connection ready, attempt to subscribe to /v1/my_user/cmd
+  > WS: interval 60
+MQTT: Event --> 2
+  > WS: Pressure = 1004.0(hPa)
+  > WS: Temperature 28.81 ºC,   > Humidity 48.77 RH
+  > WS: Rain (ticks): 0,   > WS: Wind direction 0.0 deg avg
+  > WS: Wind speed 0 m/h avg, 0 m/h 2m avg, 0 m/h max
+
+MQTT: Publish [{"meaning":"counter","value":1},{"meaning":"rain_mm","value":0},{"meaning":"wdir_int","value":0.0},{"meaning":"wspeed_avg","value":0},{"meaning":"wspeed_int","value":0},{"meaning":"wspeed_max","value":0},{"meaning":"atm_press","value":1004.0},{"meaning":"temperature","value":28.81},{"meaning":"humidity","value":48.77}] (321) to /v1/my_user/data

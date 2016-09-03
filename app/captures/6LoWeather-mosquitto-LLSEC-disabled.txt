@@ -1,0 +1,24 @@
+Zolertia RE-Mote platform
+Rime configured with address 00:12:4b:00:06:16:0f:d7
+ Net: sicslowpan
+ MAC: CSMA
+ RDC: ContikiMAC
+*--------------------------------------*
+Weather station MQTT client v.0.1
+*--------------------------------------*
+Mosquitto MQTT broker, LLSEC disabled
+Connecting to the wireless network ..........
+Client IPv6 addresses: aaaa::212:4b00:616:fd7
+fe80::212:4b00:616:fd7
+MQTT: Attempting to connect
+MQTT: Broker address ::ffff:25bb:6a10 (1883)
+MQTT: Connected to the Broker
+MQTT: connection ready, attempt to subscribe to /v1/my_user/cmd
+  > WS: interval 60
+MQTT: Event --> 2
+  > WS: Pressure = 1004.1(hPa)
+  > WS: Temperature 29.21 ºC,   > Humidity 52.51 RH
+  > WS: Rain (ticks): 0,   > WS: Wind direction 0.0 deg avg
+  > WS: Wind speed 0 m/h avg, 0 m/h 2m avg, 0 m/h max
+
+MQTT: Publish [{"meaning":"counter","value":1},{"meaning":"rain_mm","value":0},{"meaning":"wdir_int","value":0.0},{"meaning":"wspeed_avg","value":0},{"meaning":"wspeed_int","value":0},{"meaning":"wspeed_max","value":0},{"meaning":"atm_press","value":1004.1},{"meaning":"temperature","value":29.21},{"meaning":"humidity","value":52.51}] (321) to /v1/my_user/data
