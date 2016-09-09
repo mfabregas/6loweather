@@ -6,7 +6,7 @@ import paho.mqtt.client as mqtt
 
 # relayr broker is mqtt.relayr.io, mosquitto broker is test.mosquitto.org
 
-MQTT_URL         = "mqtt.relayr.io"
+MQTT_URL         = "test.mosquitto.org"
 MQTT_TOPIC_EVENT = "/v1/my_user/data"
 MQTT_TOPIC_CMD   = "/v1/my_user/cmd"
 MQTT_USER        = ""
